@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yacer32.github.io/yasser-portfolio/sitemap.xml

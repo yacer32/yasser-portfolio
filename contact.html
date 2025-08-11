@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="site.title">Yasser Portfolio</title>
+  <meta name="description" content="Multilingual Portfolio of Houari Mohamed Yasser" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Y<span>G</span></a>
+      <nav class="nav" id="nav">
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="about.html" data-i18n="nav.about">About</a>
+        <a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="services.html" data-i18n="nav.services">Services</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="controls">
+        <select id="langSwitcher" aria-label="Language switcher" class="lang-switcher">
+          <option value="ar">AR</option>
+          <option value="fr">FR</option>
+          <option value="en" selected>EN</option>
+        </select>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme"><span class="moon">🌙</span><span class="sun">☀️</span></button>
+      </div>
+    </div>
+  </header>
+  <main class="page">
+    <section class="page-hero">
+      <div class="container">
+        <h1 data-i18n="contact.title">Contact</h1>
+        <p data-i18n="contact.lead">Send a message or reach out on social media.</p>
+      </div>
+    </section>
+
+    <section class="container split">
+      <div class="col">
+        <form id="contactForm" class="card form">
+          <label for="name" data-i18n="form.name">Name</label>
+          <input id="name" name="name" type="text" required placeholder="Your name" />
+
+          <label for="email" data-i18n="form.email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="you@example.com" />
+
+          <label for="message" data-i18n="form.message">Message</label>
+          <textarea id="message" name="message" rows="6" required placeholder="..."></textarea>
+
+          <button type="submit" class="btn primary" data-i18n="form.send">Send</button>
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <div class="col">
+        <div class="card contact-info">
+          <h3 data-i18n="contact.socialTitle">Social</h3>
+          <ul class="socials"><li><a href="mailto:houariyacer8@gmail.com" aria-label="Email"><img src="./images/icon-in.svg" alt=""> Email</a></li><li><a href="tel:+213781069281" aria-label="Phone"><img src="./images/icon-in.svg" alt=""> +213781069281</a></li><li><a href="https://www.facebook.com/share/15soW9f1gm/?mibextid=wwXIfr" target="_blank" rel="noopener"><img src="./images/icon-fb.svg" alt=""> Facebook</a></li><li><a href="https://www.facebook.com/share/17262wHqSn/?mibextid=wwXIfr" target="_blank" rel="noopener"><img src="./images/icon-fb.svg" alt=""> Facebook</a></li><li><a href="https://wa.me/213781069281" target="_blank" rel="noopener"><img src="./images/icon-wa.svg" alt=""> WhatsApp</a></li><li><a href="viber://chat?number=%2B213781069281"><img src="./images/icon-viber.svg" alt=""> Viber</a></li><li><a href="tg://resolve?phone=213781069281"><img src="./images/icon-tg.svg" alt=""> Telegram</a></li></ul>
+          <div class="availability">
+            <span class="dot" id="statusDotSide"></span>
+            <span id="statusTextSide"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> <span data-i18n="footer.name">Houari Mohamed Yasser</span>. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      <div class="availability">
+        <span class="dot" id="statusDot"></span>
+        <span id="statusText"></span>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/lang.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

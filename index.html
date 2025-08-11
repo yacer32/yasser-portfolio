@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="site.title">Yasser Portfolio</title>
+  <meta name="description" content="Multilingual Portfolio of Houari Mohamed Yasser" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Y<span>G</span></a>
+      <nav class="nav" id="nav">
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="about.html" data-i18n="nav.about">About</a>
+        <a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="services.html" data-i18n="nav.services">Services</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="controls">
+        <select id="langSwitcher" aria-label="Language switcher" class="lang-switcher">
+          <option value="ar">AR</option>
+          <option value="fr">FR</option>
+          <option value="en" selected>EN</option>
+        </select>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme"><span class="moon">🌙</span><span class="sun">☀️</span></button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text" data-animate="fade-up">
+          <h1 data-i18n="home.title">Hello, I'm Yasser</h1>
+          <p class="subtitle" data-i18n="home.subtitle">Graphic Designer | Cybercafé Manager | Private Law Student</p>
+          <div class="cta">
+            <a class="btn primary" href="portfolio.html" data-i18n="home.viewWork">View My Work</a>
+            <a class="btn ghost" href="contact.html" data-i18n="home.hireMe">Hire Me</a>
+          </div>
+        </div>
+        <div class="hero-media" data-animate="fade-in">
+          <img src="./images/avatar.webp" alt="Yasser avatar" class="avatar"/>
+        </div>
+      </div>
+      <div class="hero-bg"></div>
+    </section>
+
+    <section class="highlights">
+      <div class="container grid-3">
+        <div class="card" data-animate="fade-up">
+          <h3 data-i18n="highlights.creativeTitle">Creative & Modern</h3>
+          <p data-i18n="highlights.creativeText">Clean, modern UI with smooth interactions and responsive design.</p>
+        </div>
+        <div class="card" data-animate="fade-up" data-delay="100">
+          <h3 data-i18n="highlights.multiTitle">Multilingual</h3>
+          <p data-i18n="highlights.multiText">Switch Arabic / French / English instantly—no page reloads.</p>
+        </div>
+        <div class="card" data-animate="fade-up" data-delay="200">
+          <h3 data-i18n="highlights.readyTitle">Ready to Deploy</h3>
+          <p data-i18n="highlights.readyText">Static HTML/CSS/JS compatible with GitHub Pages.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> <span data-i18n="footer.name">Houari Mohamed Yasser</span>. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      <div class="availability">
+        <span class="dot" id="statusDot"></span>
+        <span id="statusText"></span>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/lang.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

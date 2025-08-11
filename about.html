@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="site.title">Yasser Portfolio</title>
+  <meta name="description" content="Multilingual Portfolio of Houari Mohamed Yasser" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Y<span>G</span></a>
+      <nav class="nav" id="nav">
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="about.html" data-i18n="nav.about">About</a>
+        <a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="services.html" data-i18n="nav.services">Services</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="controls">
+        <select id="langSwitcher" aria-label="Language switcher" class="lang-switcher">
+          <option value="ar">AR</option>
+          <option value="fr">FR</option>
+          <option value="en" selected>EN</option>
+        </select>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme"><span class="moon">🌙</span><span class="sun">☀️</span></button>
+      </div>
+    </div>
+  </header>
+  <main class="page">
+    <section class="page-hero">
+      <div class="container">
+        <h1 data-i18n="about.title">About Me</h1>
+        <p data-i18n="about.lead">A brief biography, education, and professional experience.</p>
+      </div>
+    </section>
+
+    <section class="container split">
+      <div class="col">
+        <img src="./images/about.svg" class="illustration" alt="About illustration">
+      </div>
+      <div class="col">
+        <h2 data-i18n="about.bio">Biography</h2>
+        <p data-i18n="about.bioText"></p>
+
+        <h2 data-i18n="about.education">Education</h2>
+        <ul class="checklist" id="eduList"></ul>
+
+        <h2 data-i18n="about.experience">Experience</h2>
+        <ul class="timeline" id="expList"></ul>
+
+        <h2 data-i18n="about.skills">Technical Skills</h2>
+        <ul class="tags" id="skillsList"></ul>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> <span data-i18n="footer.name">Houari Mohamed Yasser</span>. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      <div class="availability">
+        <span class="dot" id="statusDot"></span>
+        <span id="statusText"></span>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/lang.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
