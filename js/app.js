@@ -129,7 +129,7 @@
     } else {
       await handleSubmit(name, email, msg, status); form.reset();
     }
-  }, { once:true });
+  });
 
   // Availability
   const AVAILABLE = true;
