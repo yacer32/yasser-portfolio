@@ -79,18 +79,18 @@ const META = {
 
 // Placeholder arrays (will be replaced later)
 const PORTFOLIO_ITEMS = [
-  {id:1, title:{ar:"مشروع 1", fr:"Projet 1", en:"Project 1"}, cat:"design", img:"./images/20230115001331logo-de-la-coupe-dafrique-des-nations-2023.png"},
-  {id:2, title:{ar:"مشروع 2", fr:"Projet 2", en:"Project 2"}, cat:"academic", img:"./images/afcon-logo-port-ondark-rgb-fr-897x1024-1.png"},
-  {id:3, title:{ar:"مشروع 3", fr:"Projet 3", en:"Project 3"}, cat:"design", img:"./images/carte-visite-recto.png"},
-  {id:4, title:{ar:"مشروع 4", fr:"Projet 4", en:"Project 4"}, cat:"design", img:"./images/1.png"},
-  {id:5, title:{ar:"مشروع 5", fr:"Projet 5", en:"Project 5"}, cat:"academic", img:"./images/1.png"},
-  {id:6, title:{ar:"مشروع 6", fr:"Projet 6", en:"Project 6"}, cat:"admin", img:"./images/2-2.jpg"},
+  {id:1, title:{ar:"مشروع 1", fr:"Projet 1", en:"Project 1"}, cat:"design", img:"images/20230115001331logo-de-la-coupe-dafrique-des-nations-2023.png"},
+  {id:2, title:{ar:"مشروع 2", fr:"Projet 2", en:"Project 2"}, cat:"academic", img:"images/afcon-logo-port-ondark-rgb-fr-897x1024-1.png"},
+  {id:3, title:{ar:"مشروع 3", fr:"Projet 3", en:"Project 3"}, cat:"design", img:"images/carte-visite-recto.png"},
+  {id:4, title:{ar:"مشروع 4", fr:"Projet 4", en:"Project 4"}, cat:"design", img:"images/1.png"},
+  {id:5, title:{ar:"مشروع 5", fr:"Projet 5", en:"Project 5"}, cat:"academic", img:"images/1.png"},
+  {id:6, title:{ar:"مشروع 6", fr:"Projet 6", en:"Project 6"}, cat:"admin", img:"images/2-2.jpg"},
 ];
 
 const PORTFOLIO_DETAILS = {
 1: {
     slug: "20230115001331logo-de-la-coupe-dafrique-des-nations-2023",
-    gallery: ["./images/20230115001331logo-de-la-coupe-dafrique-des-nations-2023.png"],
+    gallery: ["images/20230115001331logo-de-la-coupe-dafrique-des-nations-2023.png"],
     role: {ar:"مصمم جرافيك", fr:"Graphiste", en:"Graphic Designer"},
     tools: ["Photoshop","Illustrator"],
     date: "2025-07-01",
@@ -99,7 +99,7 @@ const PORTFOLIO_DETAILS = {
   },
 2: {
     slug: "afcon-logo-port-ondark-rgb-fr-897x1024-1",
-    gallery: ["./images/afcon-logo-port-ondark-rgb-fr-897x1024-1.png"],
+    gallery: ["images/afcon-logo-port-ondark-rgb-fr-897x1024-1.png"],
     role: {ar:"مصمم جرافيك", fr:"Graphiste", en:"Graphic Designer"},
     tools: ["Photoshop","Illustrator"],
     date: "2025-07-01",
@@ -108,7 +108,7 @@ const PORTFOLIO_DETAILS = {
   },
 3: {
     slug: "carte-visite-recto",
-    gallery: ["./images/carte-visite-recto.png"],
+    gallery: ["images/carte-visite-recto.png"],
     role: {ar:"مصمم جرافيك", fr:"Graphiste", en:"Graphic Designer"},
     tools: ["Photoshop","Illustrator"],
     date: "2025-07-01",
@@ -117,7 +117,7 @@ const PORTFOLIO_DETAILS = {
   },
 4: {
     slug: "1",
-    gallery: ["./images/1.png"],
+    gallery: ["images/1.png"],
     role: {ar:"مصمم جرافيك", fr:"Graphiste", en:"Graphic Designer"},
     tools: ["Photoshop","Illustrator"],
     date: "2025-07-01",
@@ -126,7 +126,7 @@ const PORTFOLIO_DETAILS = {
   },
 5: {
     slug: "1",
-    gallery: ["./images/1.png"],
+    gallery: ["images/1.png"],
     role: {ar:"مصمم جرافيك", fr:"Graphiste", en:"Graphic Designer"},
     tools: ["Photoshop","Illustrator"],
     date: "2025-07-01",
@@ -135,7 +135,7 @@ const PORTFOLIO_DETAILS = {
   },
 6: {
     slug: "2-2",
-    gallery: ["./images/2-2.jpg"],
+    gallery: ["images/2-2.jpg"],
     role: {ar:"مصمم جرافيك", fr:"Graphiste", en:"Graphic Designer"},
     tools: ["Photoshop","Illustrator"],
     date: "2025-07-01",
